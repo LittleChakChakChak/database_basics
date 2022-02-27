@@ -11,7 +11,7 @@ CREATE TABLE buyer
 	(id_buyer INT PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(100) NOT NULL,
 	email VARCHAR(100) UNIQUE NOT NULL,
-	phone INT(11) UNIQUE NOT NULL,
+	phone VARCHAR(11) UNIQUE NOT NULL,
 	password_buyer VARCHAR(100) NOT NULL
 	);
 	
@@ -33,7 +33,7 @@ CREATE TABLE product
 	manufacturer INT NOT NULL,
 	model TEXT(50) NOT NULL,
 	type_product INT NOT NULL, 
-	rating INT(2) UNSIGNED, 
+	rating FLOAT(2) UNSIGNED, 
 	price DECIMAL(10,2) UNSIGNED NOT NULL, 
 	characteristic TEXT, 
 	release_date YEAR,
