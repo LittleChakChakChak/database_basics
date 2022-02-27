@@ -36,7 +36,6 @@ CREATE TABLE product
 	rating INT(2) UNSIGNED, 
 	price DECIMAL(10,2) UNSIGNED NOT NULL, 
 	characteristic TEXT, 
-	quantity INT(5) UNSIGNED NOT NULL,
 	release_date YEAR,
 	FOREIGN KEY (manufacturer) REFERENCES manufacture (id_manufacture),
 	FOREIGN KEY (type_product) REFERENCES type_product (id_type_product)
